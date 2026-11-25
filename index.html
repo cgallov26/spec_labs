@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPEC LABS | Ingeniería de Redes, Sistemas y Software</title>
+    <!-- Favicon en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="assets/spec-labs-logo.png">
+    <link rel="apple-touch-icon" href="assets/spec-labs-logo.png">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Orbitron (display metálico), Inter (lectura limpia) y JetBrains Mono (HUD técnico) -->
@@ -172,14 +175,16 @@
 
     <!-- ==================== 1. NAVBAR PANORÁMICO ==================== -->
     <header class="fixed top-0 inset-x-0 z-50 bg-spec-bg/85 backdrop-blur-md border-b border-sky-500/20">
-        <div class="wide-container py-3.5 flex items-center justify-between">
-            <!-- Identidad SPEC LABS con logo oficial -->
+        <div class="wide-container py-3 flex items-center justify-between">
+            <!-- Identidad SPEC LABS sin recortes -->
             <a href="#inicio" class="flex items-center gap-3.5 group">
-                <img
-                    src="assets/spec-labs-logo.png"
-                    alt="Logo SPEC LABS"
-                    class="w-10 h-10 rounded-xl object-cover bg-spec-elevated border border-sky-400/45 shadow-neon group-hover:border-spec-cyan transition"
-                />
+                <div class="h-12 w-12 rounded-xl bg-spec-elevated border border-sky-400/45 p-1.5 flex items-center justify-center shadow-neon group-hover:border-spec-cyan transition shrink-0">
+                    <img
+                        src="assets/spec-labs-logo.png"
+                        alt="Logo SPEC LABS"
+                        class="w-full h-full object-contain"
+                    />
+                </div>
                 <div class="flex flex-col leading-none">
                     <span class="font-display font-black text-xl tracking-wider spec-metallic">SPEC</span>
                     <span class="font-display font-bold text-[11px] tracking-[0.4em] labs-electric mt-0.5">LABS</span>
@@ -229,12 +234,15 @@
                         </span>
                     </div>
 
-                    <div class="flex items-center gap-4 sm:gap-5">
-                        <img
-                            src="assets/spec-labs-logo.png"
-                            alt="SPEC LABS"
-                            class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-spec-panel border border-sky-400/40 shadow-neon shrink-0"
-                        />
+                    <!-- Logo general amplio y completo sin recortes -->
+                    <div class="flex items-center gap-5 sm:gap-6">
+                        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-spec-panel/95 border border-sky-400/45 p-2.5 flex items-center justify-center shadow-neon-strong shrink-0">
+                            <img
+                                src="assets/spec-labs-logo.png"
+                                alt="SPEC LABS"
+                                class="w-full h-full object-contain"
+                            />
+                        </div>
                         <div class="space-y-1">
                             <h1 class="font-display font-black text-5xl sm:text-6xl xl:text-7xl tracking-wider spec-metallic leading-none">
                                 SPEC
@@ -466,7 +474,7 @@
             </div>
         </section>
 
-        <!-- ==================== 4. ECOSISTEMA DE APPS ==================== -->
+        <!-- ==================== 4. ECOSISTEMA DE APPS (LOGOS MÁS GRANDES) ==================== -->
         <section id="ecosistema" class="py-20 wide-container reveal">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div class="space-y-2.5">
@@ -496,12 +504,14 @@
                 <!-- App 1: SPEC MUSIC -->
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="prod">
                     <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <img
-                                src="assets/spec-music-logo.png"
-                                alt="SPEC MUSIC"
-                                class="w-12 h-12 rounded-xl object-cover bg-spec-elevated border border-sky-400/40"
-                            />
+                        <div class="flex items-start justify-between gap-3 mb-5">
+                            <div class="w-20 h-20 rounded-2xl bg-spec-elevated border border-sky-400/40 p-2 flex items-center justify-center shadow-neon shrink-0">
+                                <img
+                                    src="assets/spec-music-logo.png"
+                                    alt="SPEC MUSIC"
+                                    class="w-full h-full object-contain"
+                                />
+                            </div>
                             <span class="font-mono text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
                                 ACTIVO
                             </span>
@@ -519,12 +529,14 @@
                 <!-- App 2: SPEC MUSIC PRO -->
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="prod">
                     <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <img
-                                src="assets/spec-music-pro-logo.png"
-                                alt="SPEC MUSIC PRO"
-                                class="w-12 h-12 rounded-xl object-cover bg-spec-elevated border border-spec-cyan/50"
-                            />
+                        <div class="flex items-start justify-between gap-3 mb-5">
+                            <div class="w-20 h-20 rounded-2xl bg-spec-elevated border border-spec-cyan/50 p-2 flex items-center justify-center shadow-neon shrink-0">
+                                <img
+                                    src="assets/spec-music-pro-logo.png"
+                                    alt="SPEC MUSIC PRO"
+                                    class="w-full h-full object-contain"
+                                />
+                            </div>
                             <span class="font-mono text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
                                 ACTIVO • PRO
                             </span>
@@ -542,12 +554,14 @@
                 <!-- App 3: SPEC SCAN PRO -->
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="prod">
                     <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <img
-                                src="assets/spec-scan-pro-logo.png"
-                                alt="SPEC SCAN PRO"
-                                class="w-12 h-12 rounded-xl object-cover bg-spec-elevated border border-sky-400/40"
-                            />
+                        <div class="flex items-start justify-between gap-3 mb-5">
+                            <div class="w-20 h-20 rounded-2xl bg-spec-elevated border border-sky-400/40 p-2 flex items-center justify-center shadow-neon shrink-0">
+                                <img
+                                    src="assets/spec-scan-pro-logo.png"
+                                    alt="SPEC SCAN PRO"
+                                    class="w-full h-full object-contain"
+                                />
+                            </div>
                             <span class="font-mono text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
                                 APK LISTO
                             </span>
@@ -562,12 +576,12 @@
                     </button>
                 </div>
 
-                <!-- App 4: SPEC SAVE / SPEC CLIP -->
+                <!-- App 4: SPEC SAVE -->
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="dev">
                     <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div class="w-12 h-12 rounded-xl bg-sky-500/15 border border-sky-400/40 flex items-center justify-center text-sky-300">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex items-start justify-between gap-3 mb-5">
+                            <div class="w-20 h-20 rounded-2xl bg-sky-500/15 border border-sky-400/40 flex items-center justify-center text-sky-300 shadow-neon shrink-0">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
                                 </svg>
                             </div>
@@ -697,11 +711,13 @@
     <footer class="relative z-10 border-t border-sky-500/20 bg-spec-deep/90 py-10">
         <div class="wide-container flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div class="flex items-center gap-3">
-                <img
-                    src="assets/spec-labs-logo.png"
-                    alt="SPEC LABS"
-                    class="w-7 h-7 rounded-lg object-cover border border-sky-400/35"
-                />
+                <div class="w-9 h-9 rounded-lg bg-spec-elevated border border-sky-400/35 p-1 flex items-center justify-center shrink-0">
+                    <img
+                        src="assets/spec-labs-logo.png"
+                        alt="SPEC LABS"
+                        class="w-full h-full object-contain"
+                    />
+                </div>
                 <span class="font-display font-bold text-lg tracking-wider">
                     <span class="spec-metallic">SPEC</span> <span class="labs-electric">LABS</span>
                 </span>
@@ -723,13 +739,15 @@
                 </svg>
             </button>
 
-            <div class="flex items-center gap-3 mt-1">
-                <img
-                    id="modal-logo"
-                    src=""
-                    alt=""
-                    class="hidden w-12 h-12 rounded-xl object-cover bg-spec-elevated border border-sky-400/40 shrink-0"
-                />
+            <div class="flex items-center gap-4 mt-1">
+                <div id="modal-logo-wrap" class="hidden w-16 h-16 rounded-2xl bg-spec-elevated border border-sky-400/40 p-1.5 flex items-center justify-center shrink-0">
+                    <img
+                        id="modal-logo"
+                        src=""
+                        alt=""
+                        class="w-full h-full object-contain"
+                    />
+                </div>
                 <div>
                     <span id="modal-badge" class="font-mono text-[11px] px-3 py-1 rounded-full bg-spec-blue/20 text-spec-cyan border border-spec-cyan/35">
                         SPEC APP
@@ -907,13 +925,14 @@
             const info = appDetails[key];
             if (!info) return;
 
+            const modalLogoWrap = document.getElementById('modal-logo-wrap');
             const modalLogo = document.getElementById('modal-logo');
             if (info.logo) {
                 modalLogo.src = info.logo;
                 modalLogo.alt = info.title;
-                modalLogo.classList.remove('hidden');
+                modalLogoWrap.classList.remove('hidden');
             } else {
-                modalLogo.classList.add('hidden');
+                modalLogoWrap.classList.add('hidden');
             }
 
             document.getElementById('modal-badge').textContent = info.badge;
