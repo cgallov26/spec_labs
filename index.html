@@ -176,18 +176,14 @@
     <!-- ==================== 1. NAVBAR PANORÁMICO ==================== -->
     <header class="fixed top-0 inset-x-0 z-50 bg-spec-bg/85 backdrop-blur-md border-b border-sky-500/20">
         <div class="wide-container py-3 flex items-center justify-between">
-            <!-- Identidad SPEC LABS sin recortes -->
-            <a href="#inicio" class="flex items-center gap-3.5 group">
-                <div class="h-12 w-12 rounded-xl bg-spec-elevated border border-sky-400/45 p-1.5 flex items-center justify-center shadow-neon group-hover:border-spec-cyan transition shrink-0">
+            <!-- Identidad SPEC LABS apaisada sin recortes -->
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <div class="h-11 w-32 sm:w-36 rounded-xl bg-spec-elevated/90 border border-sky-400/45 px-2.5 py-1 flex items-center justify-center shadow-neon group-hover:border-spec-cyan transition shrink-0">
                     <img
                         src="assets/spec-labs-logo.png"
                         alt="Logo SPEC LABS"
                         class="w-full h-full object-contain"
                     />
-                </div>
-                <div class="flex flex-col leading-none">
-                    <span class="font-display font-black text-xl tracking-wider spec-metallic">SPEC</span>
-                    <span class="font-display font-bold text-[11px] tracking-[0.4em] labs-electric mt-0.5">LABS</span>
                 </div>
             </a>
 
@@ -234,22 +230,21 @@
                         </span>
                     </div>
 
-                    <!-- Logo general amplio y completo sin recortes -->
-                    <div class="flex items-center gap-5 sm:gap-6">
-                        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-spec-panel/95 border border-sky-400/45 p-2.5 flex items-center justify-center shadow-neon-strong shrink-0">
-                            <img
-                                src="assets/spec-labs-logo.png"
-                                alt="SPEC LABS"
-                                class="w-full h-full object-contain"
-                            />
-                        </div>
-                        <div class="space-y-1">
-                            <h1 class="font-display font-black text-5xl sm:text-6xl xl:text-7xl tracking-wider spec-metallic leading-none">
-                                SPEC
-                            </h1>
-                            <div class="font-display font-bold text-2xl sm:text-3xl xl:text-4xl tracking-[0.44em] labs-electric">
-                                LABS
-                            </div>
+                    <!-- Emblema panorámico amplio y título principal -->
+                    <div class="w-full max-w-[440px] h-24 sm:h-28 rounded-2xl bg-spec-panel/95 border border-sky-400/45 px-5 py-3 flex items-center justify-center shadow-neon-strong">
+                        <img
+                            src="assets/spec-labs-logo.png"
+                            alt="SPEC LABS"
+                            class="w-full h-full object-contain brightness-110 contrast-110"
+                        />
+                    </div>
+
+                    <div class="space-y-1">
+                        <h1 class="font-display font-black text-5xl sm:text-6xl xl:text-7xl tracking-wider spec-metallic leading-none">
+                            SPEC
+                        </h1>
+                        <div class="font-display font-bold text-2xl sm:text-3xl xl:text-4xl tracking-[0.44em] labs-electric">
+                            LABS
                         </div>
                     </div>
 
@@ -505,7 +500,7 @@
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="prod">
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-5">
-                            <div class="w-20 h-20 rounded-2xl bg-spec-elevated border border-sky-400/40 p-2 flex items-center justify-center shadow-neon shrink-0">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-spec-elevated border border-sky-400/45 p-2 flex items-center justify-center shadow-neon shrink-0">
                                 <img
                                     src="assets/spec-music-logo.png"
                                     alt="SPEC MUSIC"
@@ -530,7 +525,7 @@
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="prod">
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-5">
-                            <div class="w-20 h-20 rounded-2xl bg-spec-elevated border border-spec-cyan/50 p-2 flex items-center justify-center shadow-neon shrink-0">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-spec-elevated border border-spec-cyan/50 p-2 flex items-center justify-center shadow-neon shrink-0">
                                 <img
                                     src="assets/spec-music-pro-logo.png"
                                     alt="SPEC MUSIC PRO"
@@ -555,7 +550,7 @@
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="prod">
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-5">
-                            <div class="w-20 h-20 rounded-2xl bg-spec-elevated border border-sky-400/40 p-2 flex items-center justify-center shadow-neon shrink-0">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-spec-elevated border border-sky-400/45 p-2 flex items-center justify-center shadow-neon shrink-0">
                                 <img
                                     src="assets/spec-scan-pro-logo.png"
                                     alt="SPEC SCAN PRO"
@@ -580,8 +575,8 @@
                 <div class="app-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-status="dev">
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-5">
-                            <div class="w-20 h-20 rounded-2xl bg-sky-500/15 border border-sky-400/40 flex items-center justify-center text-sky-300 shadow-neon shrink-0">
-                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-sky-500/15 border border-sky-400/45 flex items-center justify-center text-sky-300 shadow-neon shrink-0">
+                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
                                 </svg>
                             </div>
@@ -710,17 +705,14 @@
     <!-- ==================== 7. FOOTER PANORÁMICO ==================== -->
     <footer class="relative z-10 border-t border-sky-500/20 bg-spec-deep/90 py-10">
         <div class="wide-container flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-            <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-lg bg-spec-elevated border border-sky-400/35 p-1 flex items-center justify-center shrink-0">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                <div class="h-9 w-28 rounded-lg bg-spec-elevated border border-sky-400/35 px-2 py-1 flex items-center justify-center shrink-0">
                     <img
                         src="assets/spec-labs-logo.png"
                         alt="SPEC LABS"
                         class="w-full h-full object-contain"
                     />
                 </div>
-                <span class="font-display font-bold text-lg tracking-wider">
-                    <span class="spec-metallic">SPEC</span> <span class="labs-electric">LABS</span>
-                </span>
                 <span class="hidden sm:inline text-slate-600">|</span>
                 <span class="text-xs text-slate-400">Ingeniería de Redes, Sistemas y Software</span>
             </div>
@@ -740,7 +732,7 @@
             </button>
 
             <div class="flex items-center gap-4 mt-1">
-                <div id="modal-logo-wrap" class="hidden w-16 h-16 rounded-2xl bg-spec-elevated border border-sky-400/40 p-1.5 flex items-center justify-center shrink-0">
+                <div id="modal-logo-wrap" class="hidden w-20 h-20 rounded-2xl bg-spec-elevated border border-sky-400/40 p-2 flex items-center justify-center shrink-0">
                     <img
                         id="modal-logo"
                         src=""
