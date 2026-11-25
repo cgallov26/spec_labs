@@ -176,14 +176,18 @@
     <!-- ==================== 1. NAVBAR PANORÁMICO ==================== -->
     <header class="fixed top-0 inset-x-0 z-50 bg-spec-bg/85 backdrop-blur-md border-b border-sky-500/20">
         <div class="wide-container py-3 flex items-center justify-between">
-            <!-- Identidad SPEC LABS apaisada sin recortes -->
+            <!-- Logo cuadrado arriba + marca -->
             <a href="#inicio" class="flex items-center gap-3 group">
-                <div class="h-11 w-32 sm:w-36 rounded-xl bg-spec-elevated/90 border border-sky-400/45 px-2.5 py-1 flex items-center justify-center shadow-neon group-hover:border-spec-cyan transition shrink-0">
+                <div class="w-12 h-12 rounded-xl bg-spec-elevated border border-sky-400/45 p-1.5 flex items-center justify-center shadow-neon group-hover:border-spec-cyan transition shrink-0">
                     <img
                         src="assets/spec-labs-logo.png"
                         alt="Logo SPEC LABS"
                         class="w-full h-full object-contain"
                     />
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="font-display font-black text-lg tracking-wider spec-metallic">SPEC</span>
+                    <span class="font-display font-bold text-[10px] tracking-[0.38em] labs-electric mt-0.5">LABS</span>
                 </div>
             </a>
 
@@ -228,15 +232,6 @@
                         <span class="font-mono text-xs tracking-wider text-sky-300">
                             LABORATORIO TECNOLÓGICO • PIURA, PERÚ
                         </span>
-                    </div>
-
-                    <!-- Emblema panorámico amplio y título principal -->
-                    <div class="w-full max-w-[440px] h-24 sm:h-28 rounded-2xl bg-spec-panel/95 border border-sky-400/45 px-5 py-3 flex items-center justify-center shadow-neon-strong">
-                        <img
-                            src="assets/spec-labs-logo.png"
-                            alt="SPEC LABS"
-                            class="w-full h-full object-contain brightness-110 contrast-110"
-                        />
                     </div>
 
                     <div class="space-y-1">
@@ -469,7 +464,7 @@
             </div>
         </section>
 
-        <!-- ==================== 4. ECOSISTEMA DE APPS (LOGOS MÁS GRANDES) ==================== -->
+        <!-- ==================== 4. ECOSISTEMA DE APPS ==================== -->
         <section id="ecosistema" class="py-20 wide-container reveal">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div class="space-y-2.5">
@@ -516,9 +511,14 @@
                             Reproductor musical ágil con interfaz oscura de alto contraste, búsqueda instantánea y reproducción continua en segundo plano.
                         </p>
                     </div>
-                    <button onclick="openAppModal('music')" class="w-full py-2.5 px-4 rounded-xl bg-spec-elevated hover:bg-spec-blue border border-sky-400/30 text-xs font-semibold text-white transition">
-                        Ver Detalles Técnicos
-                    </button>
+                    <div class="space-y-2.5">
+                        <a href="https://github.com/cgallov26/spec_labs/releases/download/spec-music-v1.0/SPEC.MUSIC.apk" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-spec-blue to-spec-cyan text-white text-xs font-semibold text-center block hover:brightness-110 transition">
+                            Descargar APK
+                        </a>
+                        <button onclick="openAppModal('music')" class="w-full py-2 px-4 rounded-xl bg-spec-elevated hover:bg-spec-panel border border-sky-400/30 text-xs font-semibold text-slate-200 transition">
+                            Ver Detalles Técnicos
+                        </button>
+                    </div>
                 </div>
 
                 <!-- App 2: SPEC MUSIC PRO -->
@@ -541,9 +541,14 @@
                             Edición avanzada sin límites ni suscripciones: listas personalizadas, control total de audio, caché inteligente y experiencia libre de anuncios.
                         </p>
                     </div>
-                    <button onclick="openAppModal('musicpro')" class="w-full py-2.5 px-4 rounded-xl bg-spec-elevated hover:bg-spec-blue border border-sky-400/30 text-xs font-semibold text-white transition">
-                        Ver Detalles Técnicos
-                    </button>
+                    <div class="space-y-2.5">
+                        <a href="https://github.com/cgallov26/spec_labs/releases/download/spec-music-pro-v1.0/SPEC.MUSIC.PRO.apk" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-spec-blue to-spec-cyan text-white text-xs font-semibold text-center block hover:brightness-110 transition">
+                            Descargar APK
+                        </a>
+                        <button onclick="openAppModal('musicpro')" class="w-full py-2 px-4 rounded-xl bg-spec-elevated hover:bg-spec-panel border border-sky-400/30 text-xs font-semibold text-slate-200 transition">
+                            Ver Detalles Técnicos
+                        </button>
+                    </div>
                 </div>
 
                 <!-- App 3: SPEC SCAN PRO -->
@@ -566,9 +571,14 @@
                             Escáner documental 100% offline en el teléfono: detección de bordes, modo DNI en hoja A4, OCR local, firma digital y PDF sin marcas de agua.
                         </p>
                     </div>
-                    <button onclick="openAppModal('scan')" class="w-full py-2.5 px-4 rounded-xl bg-spec-elevated hover:bg-spec-blue border border-sky-400/30 text-xs font-semibold text-white transition">
-                        Ver Arquitectura
-                    </button>
+                    <div class="space-y-2.5">
+                        <a href="https://github.com/cgallov26/spec_labs/releases/download/spec-scan-pro-v1.0/SPEC.SCAN.PRO.apk" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-spec-blue to-spec-cyan text-white text-xs font-semibold text-center block hover:brightness-110 transition">
+                            Descargar APK
+                        </a>
+                        <button onclick="openAppModal('scan')" class="w-full py-2 px-4 rounded-xl bg-spec-elevated hover:bg-spec-panel border border-sky-400/30 text-xs font-semibold text-slate-200 transition">
+                            Ver Arquitectura
+                        </button>
+                    </div>
                 </div>
 
                 <!-- App 4: SPEC SAVE -->
@@ -706,13 +716,9 @@
     <footer class="relative z-10 border-t border-sky-500/20 bg-spec-deep/90 py-10">
         <div class="wide-container flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3">
-                <div class="h-9 w-28 rounded-lg bg-spec-elevated border border-sky-400/35 px-2 py-1 flex items-center justify-center shrink-0">
-                    <img
-                        src="assets/spec-labs-logo.png"
-                        alt="SPEC LABS"
-                        class="w-full h-full object-contain"
-                    />
-                </div>
+                <span class="font-display font-bold text-lg tracking-wider">
+                    <span class="spec-metallic">SPEC</span> <span class="labs-electric">LABS</span>
+                </span>
                 <span class="hidden sm:inline text-slate-600">|</span>
                 <span class="text-xs text-slate-400">Ingeniería de Redes, Sistemas y Software</span>
             </div>
@@ -759,7 +765,10 @@
                 <ul id="modal-specs" class="text-xs text-slate-300 space-y-1.5 list-disc list-inside"></ul>
             </div>
 
-            <div class="flex justify-end">
+            <div class="flex flex-wrap items-center justify-end gap-3">
+                <a id="modal-apk-btn" href="#contacto" onclick="closeAppModal()" class="hidden px-5 py-2.5 rounded-xl bg-gradient-to-r from-spec-blue to-spec-cyan text-white text-xs font-semibold hover:brightness-110 transition">
+                    Descargar APK
+                </a>
                 <button onclick="closeAppModal()" class="px-6 py-2.5 rounded-xl bg-spec-blue text-white text-xs font-semibold hover:bg-spec-cyan transition">
                     Cerrar
                 </button>
@@ -871,6 +880,7 @@
                 logo: 'assets/spec-music-logo.png',
                 badge: 'DISPONIBLE • AUDIO STREAMING',
                 title: 'SPEC MUSIC',
+                apkUrl: 'https://github.com/cgallov26/spec_labs/releases/download/spec-music-v1.0/SPEC.MUSIC.apk',
                 desc: 'Aplicación de música diseñada para ofrecer reproducción rápida, interfaz oscura ergonómica y controles integrados en notificación y pantalla de bloqueo.',
                 specs: [
                     'Reproducción continua en segundo plano con bajo consumo de batería.',
@@ -882,6 +892,7 @@
                 logo: 'assets/spec-music-pro-logo.png',
                 badge: 'DISPONIBLE • EDICIÓN PRO',
                 title: 'SPEC MUSIC PRO',
+                apkUrl: 'https://github.com/cgallov26/spec_labs/releases/download/spec-music-pro-v1.0/SPEC.MUSIC.PRO.apk',
                 desc: 'Versión completa con funciones avanzadas desbloqueadas, gestión personalizada de biblioteca y experiencia totalmente libre de interrupciones.',
                 specs: [
                     'Sin anuncios ni muros de suscripción mensual.',
@@ -893,6 +904,7 @@
                 logo: 'assets/spec-scan-pro-logo.png',
                 badge: 'APK FIRMADO • PROCESAMIENTO LOCAL',
                 title: 'SPEC SCAN PRO',
+                apkUrl: 'https://github.com/cgallov26/spec_labs/releases/download/spec-scan-pro-v1.0/SPEC.SCAN.PRO.apk',
                 desc: 'Digitalizador de documentos que opera 100% offline en el dispositivo del usuario sin enviar archivos privados a servidores externos.',
                 specs: [
                     'Detección automática de bordes, modo DNI en hoja A4 y unión de PDFs.',
@@ -904,6 +916,7 @@
                 logo: '',
                 badge: 'EN LABORATORIO • UTILIDAD MULTIMEDIA',
                 title: 'SPEC SAVE',
+                apkUrl: '',
                 desc: 'Gestor limpio para guardar enlaces y contenido por carpetas, con reproductor integrado y conversión a MP3 sin publicidad invasiva.',
                 specs: [
                     'Interfaz directa sin publicidad invasiva ni redirecciones.',
@@ -925,6 +938,14 @@
                 modalLogoWrap.classList.remove('hidden');
             } else {
                 modalLogoWrap.classList.add('hidden');
+            }
+
+            const modalApkBtn = document.getElementById('modal-apk-btn');
+            if (info.apkUrl) {
+                modalApkBtn.href = info.apkUrl;
+                modalApkBtn.classList.remove('hidden');
+            } else {
+                modalApkBtn.classList.add('hidden');
             }
 
             document.getElementById('modal-badge').textContent = info.badge;
